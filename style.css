@@ -115,3 +115,29 @@ a:hover{
 span{
     color: rgb(255, 193, 193);
 }
+
+.division{
+    border-top: 5px solid #a1a0a0;
+    width: 20%;
+    animation-name: reverseHrMotion;
+    animation-duration: 0.7s;
+}
+
+
+@keyframes hrMotion{
+    from {width: 20%;}
+    to { width: 70%;}
+   
+}
+@keyframes reverseHrMotion{
+    from {width: 70%;}
+    to { width: 20%;}
+}
+
+.division:hover{
+    border-top: 5px solid #a1a0a0;
+    width: 20%;
+    animation-name: hrMotion;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards
+}
